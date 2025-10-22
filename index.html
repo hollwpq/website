@@ -1,53 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>tokyo_ngl</title>
-<style>
-  body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(circle at center, rgba(15,15,25,0.6), rgba(5,5,10,0.85)),
-                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(8px);
-  }
-
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 80px;
-    color: #ff99dd;
-    text-shadow: 
-      0 0 6px #ff99dd,
-      0 0 12px #ff66cc,
-      0 0 24px #ff66cc;
-    animation: pulse 3s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% {
-      text-shadow:
-        0 0 6px #ff99dd,
-        0 0 12px #ff66cc,
-        0 0 24px #ff66cc;
-      opacity: 0.9;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ଘ( ཫ . ᵔ )　tokyo ♡　her she</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#ff8fcf;
+      --accent-glow:rgba(255,143,207,0.4);
+      --text:rgba(244,244,246,0.98);
+      --muted:rgba(244,244,246,0.78);
+      --border:rgba(255,255,255,0.08);
     }
-    50% {
-      text-shadow:
-        0 0 3px #ff99dd,
-        0 0 8px #ff66cc,
-        0 0 16px #ff66cc;
-      opacity: 0.7;
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      font-size:17px;
+      background:
+        linear-gradient(180deg,rgba(0,0,0,0.52),rgba(4,4,6,0.9)),
+        url("https://files.catbox.moe/teeae6.png") center/cover no-repeat fixed;
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
     }
-  }
-</style>
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background:linear-gradient(180deg,rgba(0,0,0,0.3),rgba(0,0,0,0.55));
+      pointer-events:none;
+      z-index:0;
+    }
+    .wrap{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:3rem 1rem;
+      box-sizing:border-box;
+      z-index:1;
+      position:relative;
+    }
+    .card{
+      width:100%;
+      max-width:760px;
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.04);
+      backdrop-filter:blur(6px);
+      box-shadow:0 8px 32px rgba(2,6,12,0.6);
+      border-radius:16px;
+      padding:2.4rem;
+      box-sizing:border-box;
+    }
+    .title{
+      text-align:center;
+      font-size:36px;
+      margin:0 0 0.5rem 0;
+      color:var(--accent);
+      text-shadow:
+        0 0 6px var(--accent-glow),
+        0 0 18px rgba(255,143,207,0.2);
+      font-weight:600;
+    }
+    .subtitle{
+      text-align:center;
+      font-size:16px;
+      color:var(--muted);
+      margin-bottom:1.5rem;
+    }
+    .entry img{
+      display:block;
+      margin:0.8rem auto;
+      max-width:100%;
+      border-radius:10px;
+      opacity:0.98;
+    }
+    .divider{
+      height:1px;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,0.05),transparent);
+      margin:1rem 0;
+    }
+    .btn-row{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:1.2rem;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 22px;
+      font-size:16px;
+      color:var(--accent);
+      border:1px solid var(--border);
+      border-radius:6px;
+      text-decoration:none;
+      background:rgba(255,255,255,0.02);
+      transition:all 0.2s ease;
+    }
+    .btn:hover{
+      border-color:rgba(255,143,207,0.25);
+      box-shadow:0 0 8px rgba(255,143,207,0.25);
+      color:#fff;
+    }
+    @media(max-width:720px){
+      .card{padding:1.6rem;}
+      .title{font-size:28px;}
+      .subtitle{font-size:14px;}
+      .btn{font-size:15px;}
+    }
+  </style>
 </head>
 <body>
-  <h1>tokyo_ngl</h1>
+  <div class="wrap">
+    <main class="card" role="main">
+      <h1 class="title">ଘ( ཫ . ᵔ )　꒰  tokyo ♡　her　she</h1>
+      <div class="subtitle">♪๑◝ 　𓏲 ͡ ། 19₊　&lt;3　scary　·　female · lesbian</div>
+      <div class="entry">
+        <img src="https://files.catbox.moe/kcvy4r.png" alt="tokyo image">
+        <img src="https://files.catbox.moe/9099gw.gif" alt="decor" style="max-width:400px;">
+        <div style="text-align:center;margin-top:8px;">
+          <span>ଘ( ཫ . ᵔ )　꒰  ⠀˙⠀˖　 tokyo ♡⠀her　she　⠀݂♪</span><br>
+          <span>꒰૮꒰ ྀི◞ ◟ ♡ ͝ ༷ ⑅   female     ︵    lesbian</span><br>
+          <span>♪๑◝ 　𓏲 ͡ ། 19₊　&lt;3   　 scary</span>
+        </div>
+        <div class="divider"></div>
+        <p style="text-align:center;">
+          <span>⠀†　͏͏͏ ૮ ◞⸝⸝ ภ ྀིა⠀͏͏͏⠀˙⠀☆⠀　rae⠀⠀　taylor</span>
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="https://discord.com/users/1217671290136297594" target="_blank" rel="noopener">discord</a>
+          <a class="btn" href="https://www.utctime.net/mst-time-now" target="_blank" rel="noopener">timezone</a>
+        </div>
+        <img src="https://files.catbox.moe/xgtycc.png" alt="decor small" style="max-width:360px;margin-top:20px;">
+      </div>
+    </main>
+  </div>
 </body>
 </html>
